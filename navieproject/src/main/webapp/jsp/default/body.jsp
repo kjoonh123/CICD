@@ -16,7 +16,7 @@
                         <div class="col-lg-6">
                             <div class="hero__text">
                                 <div class="label">Drama</div>
-                                <h2>스토브리그</h2>
+                                <h2>스토브 리그</h2>
                                 <p>룰도 심판도 없다!</p>
                                 <a href="drama_1"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
                             </div>
@@ -28,7 +28,7 @@
                         <div class="col-lg-6">
                             <div class="hero__text">
                                 <div class="label">Movie</div>
-                                <h2>범죄도시2</h2>
+                                <h2>범죄도시 2</h2>
                                 <p>나쁜 놈들 싹 쓸어버린다!</p>
                                 <a href="movie_1"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
                             </div>
@@ -40,7 +40,7 @@
                         <div class="col-lg-6">
                             <div class="hero__text">
                                 <div class="label">Animation</div>
-                                <h2>너의이름은</h2>
+                                <h2>너의 이름은</h2>
                                 <p>꿈속에서 시작된 기적같은 사랑이야기</p>
                                 <a href="animation_1"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
                             </div>
