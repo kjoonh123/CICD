@@ -16,7 +16,7 @@
                         <div class="col-lg-6">
                             <div class="hero__text">
                                 <div class="label">Drama</div>
-                                <h2>스토브 리그 Season.1</h2>
+                                <h2>스토브 리그</h2>
                                 <p>룰도 심판도 없다!</p>
                                 <a href="drama_1"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
                             </div>
