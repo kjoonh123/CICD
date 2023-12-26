@@ -7,15 +7,15 @@
 #선생님이 주신 방법
 # FROM eclipse-temurin:17-jdk-jammy
 # WORKDIR /app
-# COPY ./com.test/.mvn/wrapper/maven-wrapper.jar .mvn/wrapper/maven-wrapper.jar
-# COPY ./com.test/.mvn/wrapper/maven-wrapper.properties .mvn/wrapper/maven-wrapper.properties
-# COPY ./com.test/mvnw ./
-# COPY ./com.test/mvnw.cmd ./
-# COPY ./com.test/pom.xml ./
+# COPY ./navieproject/.mvn/wrapper/maven-wrapper.jar .mvn/wrapper/maven-wrapper.jar
+# COPY ./navieproject/.mvn/wrapper/maven-wrapper.properties .mvn/wrapper/maven-wrapper.properties
+# COPY ./navieproject/mvnw ./
+# COPY ./navieproject/mvnw.cmd ./
+# COPY ./navieproject/pom.xml ./
 # # COPY work ./work
 # RUN chmod +x ./mvnw
 # RUN ./mvnw dependency:resolve
-# COPY ./com.test/src ./src
+# COPY ./navieproject/src ./src
 # CMD ["./mvnw", "spring-boot:run"]
 
 # 기본 이미지 설정
@@ -25,20 +25,20 @@ FROM eclipse-temurin:17-jdk-jammy
 WORKDIR /app
 
 # Maven Wrapper 복사
-COPY ./com.test/.mvn/wrapper/maven-wrapper.jar .mvn/wrapper/maven-wrapper.jar
-COPY ./com.test/.mvn/wrapper/maven-wrapper.properties .mvn/wrapper/maven-wrapper.properties
-COPY ./com.test/mvnw ./
-COPY ./com.test/mvnw.cmd ./
+COPY ./navieproject/.mvn/wrapper/maven-wrapper.jar .mvn/wrapper/maven-wrapper.jar
+COPY ./navieproject/.mvn/wrapper/maven-wrapper.properties .mvn/wrapper/maven-wrapper.properties
+COPY ./navieproject/mvnw ./
+COPY ./navieproject/mvnw.cmd ./
 
 # pom.xml 복사
-COPY ./com.test/pom.xml ./
+COPY ./navieproject/pom.xml ./
 
 # Maven Wrapper 실행 권한 설정 및 의존성 해결
 RUN chmod +x ./mvnw
 RUN ./mvnw dependency:resolve
 
 # 소스 코드 복사
-COPY ./com.test/src ./src
+COPY ./navieproject/src ./src
 
 # Whatap 에이전트 설치를 위한 디렉토리 생성 및 파일 복사
 RUN mkdir -p /whatap
