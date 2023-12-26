@@ -169,7 +169,7 @@
                                             <li>Highteen</li>
                                             <li>Romance</li>
                                         </ul>
-                                        <h5><a href="drama_3">그해우리는</a></h5>
+                                        <h5><a href="drama_3">그 해 우리는</a></h5>
                                     </div>
                                 </div>
                             </div>
