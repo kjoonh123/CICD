@@ -49,5 +49,5 @@ COPY ./whatap.conf /whatap/
 EXPOSE 8080
 
 # 애플리케이션 실행 명령어
-CMD ["java", "-javaagent:/whatap/whatap.agent-2.0_20.jar", "-Dwhatap.micro.enabled=true", "-jar", "/app/target/world.navie-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-javaagent:/whatap/whatap.agent-2.2.25.jar", "-Dwhatap.micro.enabled=true", "-jar", "/app/target/world.navie-0.0.1-SNAPSHOT.jar"]
 
