@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="world.navie.www.member.IMemberMapper">
+
+	<resultMap type="world.navie.www.member.MemberDTO" id="member">
+		<id column="id" property="id"/>
+		<result column="pw" property="pw"/>
+		<result column="user_name" property="userName"/>
+		<result column="postcode" property="postcode"/>
+		<result column="address" property="address"/>
+		<result column="detailAddress" property="detailAddress"/>
+		<result column="mobile" property="mobile"/>
+	</resultMap>
+	
+	<!-- DB유저 조회 -->
+	<select id="memberInfo" resultMap="member">
+		SELECT * FROM member
+	</select>
+	
+	<!-- DB등록 -->
+	<insert id="registProc">
+		INSERT INTO member 
+		VALUES(#{id}, #{pw}, #{userName}, #{postcode}, #{address}, #{detailAddress}, #{mobile})
+	</insert>
+	
+	<!-- 중복로그인조회 -->
+	<select id="login" resultMap="member">
+		SELECT * FROM member WHERE id=#{id}
+	</select>
+	
+	<!-- 회원수정 -->
+	<update id="updateProc">
+		UPDATE member 
+		SET pw=#{pw}, mobile=#{mobile}, user_name=#{userName}, postcode=#{postcode}, address=#{address}, detailAddress=#{detailAddress} 
+		WHERE id=#{id}
+	</update>
+	
+	<!-- 회원삭제 -->
+	<delete id="deleteProc">
+		DELETE FROM member WHERE id=#{id}
+	</delete>
+	
+</mapper>
