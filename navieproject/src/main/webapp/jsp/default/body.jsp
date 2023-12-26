@@ -41,7 +41,7 @@
                             <div class="hero__text">
                                 <div class="label">Animation</div>
                                 <h2>너의 이름은</h2>
-                                <p>꿈속에서 시작된 기적같은 사랑이야기</p>
+                                <p>꿈 속에서 시작된 기적같은 사랑 이야기</p>
                                 <a href="animation_1"><span>Watch Now</span> <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
